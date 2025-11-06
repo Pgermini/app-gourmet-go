@@ -2,9 +2,18 @@ import { StyleSheet } from "react-native";
 
 export const styles = StyleSheet.create({
   container: {
-    flex: 1,
     alignItems: "center",
     padding: 16,
+    backgroundColor: "#fff",
+  },
+
+  topBar: {
+    flexDirection: "row",
+    justifyContent: "space-between",
+    width: "100%",
+    marginTop: 20,
+    paddingHorizontal: 20,
+    alignItems: "center",
   },
 
   menuContainer: {
@@ -28,6 +37,43 @@ export const styles = StyleSheet.create({
     borderRadius: 10,
   },
 
+  Image: {
+    width: "100%",
+    alignItems: "center",
+    marginTop: 15,
+  },
+
+  ImagePizza: {
+    width: 300,
+    height: 180,
+    borderRadius: 20,
+    elevation: 5,
+    shadowColor: "#000",
+    shadowOpacity: 0.2,
+    shadowOffset: { width: 0, height: 4 },
+    shadowRadius: 6,
+  },
+
+  saboresContainer: {
+    flexDirection: "row",
+    justifyContent: "center",
+    width: "100%",
+    gap: 15, //
+    marginTop: 10,
+  },
+
+  ImageMussarela: {
+    width: 176,
+    height: 135,
+    borderRadius: 30,
+  },
+
+  ImageQuatroQueijos: {
+    width: 176,
+    height: 135,
+    borderRadius: 30,
+  },
+
   line: {
     width: "90%",
     height: 1.5,
@@ -45,14 +91,6 @@ export const styles = StyleSheet.create({
     color: "#000",
   },
 
-  topBar: {
-    flexDirection: "row",
-    justifyContent: "space-between",
-    width: "100%",
-    marginTop: 20,
-    paddingHorizontal: 20,
-    alignItems: "center",
-  },
   footer: {
     position: "absolute",
     bottom: 0,
@@ -66,11 +104,17 @@ export const styles = StyleSheet.create({
     justifyContent: "space-around",
     alignItems: "center",
     paddingBottom: 5,
+    shadowColor: "#000",
+    shadowOffset: { width: 0, height: -2 },
+    shadowOpacity: 0.1,
+    shadowRadius: 4,
+    elevation: 5,
   },
 
   footerItem: {
     alignItems: "center",
     justifyContent: "center",
+    flex: 1,
   },
 
   footerText: {
