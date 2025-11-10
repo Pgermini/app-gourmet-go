@@ -7,9 +7,10 @@ import { styles } from "./styles";
 
 export const Home = () => {
   return (
-    <View style={{ flex: 1 }}>
+    <View style={{ flex: 1, backgroundColor: "#fff" }}>
       <ScrollView contentContainerStyle={{ paddingBottom: 100 }}>
         <View style={styles.container}>
+          {/* Barra superior */}
           <View style={styles.topBar}>
             <TouchableOpacity>
               <MaterialCommunityIcons
@@ -28,63 +29,121 @@ export const Home = () => {
             </TouchableOpacity>
           </View>
 
-          <Image source={require("@/src/assets/logo/logo.png")} />
+          {/* Logo */}
+          <Image
+            source={require("@/src/assets/logo/logo.png")}
+            style={{
+              width: 160,
+              height: 80,
+              resizeMode: "contain",
+              marginTop: 10,
+            }}
+          />
 
-          <View style={styles.menuContainer}>
-            <View style={styles.sub}>
-              <Image
-                source={require("@/src/assets/subMenu/lanches.png")}
-                style={styles.subImage}
-                resizeMode="cover"
-              />
-            </View>
-
-            <View style={styles.sub}>
-              <Image
-                source={require("@/src/assets/subMenu/Refeições.png")}
-                style={styles.subImage}
-                resizeMode="cover"
-              />
-            </View>
-
-            <View style={styles.sub}>
-              <Image
-                source={require("@/src/assets/subMenu/sobremessa.png")}
-                style={styles.subImage}
-                resizeMode="cover"
-              />
-            </View>
-          </View>
+          {/* ===== MENU RÁPIDO (CARROSSEL HORIZONTAL COM IMAGENS) ===== */}
+          <ScrollView
+            horizontal
+            showsHorizontalScrollIndicator={false}
+            contentContainerStyle={styles.menuRapidoContainer}
+          >
+            {[
+              {
+                src: require("@/src/assets/subMenu/Refeições (2).png"),
+                nome: "Refeições",
+              },
+              {
+                src: require("@/src/assets/subMenu/Sobremesas (2).png"),
+                nome: "Sobremesas",
+              },
+              {
+                src: require("@/src/assets/subMenu/Bebidas (2).png"),
+                nome: "Bebidas",
+              },
+            ].map((item, index) => (
+              <TouchableOpacity key={index} style={styles.menuItem}>
+                <View style={styles.menuCardFundo}>
+                  <Image
+                    source={item.src}
+                    style={styles.menuImage}
+                    resizeMode="cover"
+                  />
+                  <Text style={styles.menuLabel}>{item.nome}</Text>
+                </View>
+              </TouchableOpacity>
+            ))}
+          </ScrollView>
 
           <View style={styles.line} />
-          <Text style={styles.title}>Lanches</Text>
+        </View>
 
-          <View style={styles.Image}>
+        {/* ===== LANCHES ===== */}
+        <View>
+          <Text style={styles.title}>Lanches</Text>
+          <View style={styles.lanchesContainer}>
             <Image
-              source={require("@/src/assets/pizza/pizza.png")}
+              source={require("@/src/assets/lanches/pizza.png")}
               style={styles.ImagePizza}
               resizeMode="cover"
             />
+
+            <Image
+              source={require("@/src/assets/lanches/Hamburguer.png")}
+              style={styles.ImageHamburger}
+              resizeMode="cover"
+            />
           </View>
-          <View style={styles.line} />
-          <Text style={styles.title}>Sabores</Text>
         </View>
 
-        <View style={styles.saboresContainer}>
-          <Image
-            source={require("@/src/assets/pizza/sabores/Mussarela.png")}
-            style={styles.ImageMussarela}
-            resizeMode="cover"
-          />
+        {/* ===== REFEIÇÕES ===== */}
+        <View>
+          <Text style={styles.title}>Refeições</Text>
 
-          <Image
-            source={require("@/src/assets/pizza/sabores/QuatroQueijo.png")}
-            style={styles.ImageQuatroQueijos}
-            resizeMode="cover"
-          />
+          <View style={styles.RefeicoesContainer}>
+            <View style={styles.ImageRefeicoes}>
+              <Image
+                source={require("@/src/assets/Refeições/refeições.png")}
+                style={styles.ImageRefeicoes}
+                resizeMode="cover"
+              />
+              <Text style={styles.textSobreImagem}>PRATOS PRINCIPAIS</Text>
+            </View>
+          </View>
+        </View>
+
+        {/* ===== SOBREMESAS ===== */}
+        <View>
+          <Text style={styles.title}>Sobremesas</Text>
+
+          <View style={styles.SobremesasContainer}>
+            <View style={styles.ImageSobremesas}>
+              <Image
+                source={require("@/src/assets/Sobremesas/Sobremesas.png")}
+                style={styles.ImageSobremesas}
+                resizeMode="cover"
+              />
+              <Text style={styles.textSobreImagem}>DOCES / SORVETES</Text>
+            </View>
+          </View>
+        </View>
+
+        {/* ===== BEBIDAS ===== */}
+        <View>
+          <Text style={styles.title}>Bebidas</Text>
+
+          <View style={styles.BebidasContainer}>
+            <View style={styles.cardFundo}>
+              <Image
+                source={require("@/src/assets/Bebidas/Bebidas.png")}
+                style={styles.ImageBebidas}
+                resizeMode="cover"
+              />
+              <Text style={styles.textSobreImagem}>DRINKS / REFRESCOS</Text>
+            </View>
+          </View>
         </View>
       </ScrollView>
 
+      {/* ===== RODAPÉ (footer) ===== */}
       <View style={styles.footer}>
         <TouchableOpacity style={styles.footerItem}>
           <Entypo name="home" size={26} color="black" />

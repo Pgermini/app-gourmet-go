@@ -3,123 +3,174 @@ import { StyleSheet } from "react-native";
 export const styles = StyleSheet.create({
   container: {
     alignItems: "center",
-    padding: 16,
-    backgroundColor: "#fff",
   },
 
   topBar: {
+    width: "90%",
     flexDirection: "row",
     justifyContent: "space-between",
-    width: "100%",
-    marginTop: 20,
-    paddingHorizontal: 20,
     alignItems: "center",
-  },
-
-  menuContainer: {
-    flexDirection: "row",
-    justifyContent: "center",
-    alignItems: "center",
-    marginTop: 20,
-    gap: 20,
-  },
-
-  sub: {
-    width: 70,
-    height: 50,
-    borderRadius: 10,
-    overflow: "hidden",
-  },
-
-  subImage: {
-    width: "100%",
-    height: "100%",
-    borderRadius: 10,
-  },
-
-  Image: {
-    width: "100%",
-    alignItems: "center",
-    marginTop: 15,
-  },
-
-  ImagePizza: {
-    width: 300,
-    height: 180,
-    borderRadius: 20,
-    elevation: 5,
-    shadowColor: "#000",
-    shadowOpacity: 0.2,
-    shadowOffset: { width: 0, height: 4 },
-    shadowRadius: 6,
-  },
-
-  saboresContainer: {
-    flexDirection: "row",
-    justifyContent: "center",
-    width: "100%",
-    gap: 15, //
-    marginTop: 10,
-  },
-
-  ImageMussarela: {
-    width: 176,
-    height: 135,
-    borderRadius: 30,
-  },
-
-  ImageQuatroQueijos: {
-    width: 176,
-    height: 135,
-    borderRadius: 30,
+    marginTop: 50,
   },
 
   line: {
     width: "90%",
-    height: 1.5,
-    backgroundColor: "#000",
+    height: 1,
+    backgroundColor: "#ccc",
+    marginTop: 10,
     alignSelf: "center",
-    marginTop: 15,
   },
 
   title: {
-    fontFamily: "Actor",
-    fontSize: 25,
-    fontWeight: "400",
-    textAlign: "center",
-    marginTop: 15,
+    fontSize: 22,
+    fontWeight: "bold",
+    marginLeft: 150,
+    marginTop: 25,
     color: "#000",
   },
 
+  /* ===================== MENU RÁPIDO (CARROSSEL) ===================== */
+  menuRapidoContainer: {
+    paddingHorizontal: 15,
+    paddingVertical: 20,
+    gap: 15,
+  },
+
+  menuItem: {
+    marginRight: 15,
+  },
+
+  menuCardFundo: {
+    backgroundColor: "#E0E0E0", // fundo cinza claro
+    borderRadius: 16,
+    width: 120,
+    height: 140,
+    justifyContent: "center",
+    alignItems: "center",
+    position: "relative",
+    shadowColor: "#000",
+    shadowOpacity: 0.1,
+    shadowOffset: { width: 0, height: 2 },
+    shadowRadius: 4,
+    elevation: 3,
+  },
+
+  menuImage: {
+    width: 100,
+    height: 100,
+    borderRadius: 12,
+  },
+
+  menuLabel: {
+    position: "absolute",
+    top: 10,
+    left: 50,
+    right: 0,
+    textAlign: "center", // centraliza o texto no card
+    fontSize: 12,
+    fontWeight: "bold",
+    color: "#000",
+  },
+
+  /* ===================== LANCHES ===================== */
+  lanchesContainer: {
+    flexDirection: "row",
+    justifyContent: "space-evenly",
+    marginTop: 10,
+  },
+
+  ImagePizza: {
+    width: 160,
+    height: 120,
+    borderRadius: 10,
+  },
+
+  ImageHamburger: {
+    width: 160,
+    height: 120,
+    borderRadius: 10,
+  },
+
+  /* ===================== REFEIÇÕES ===================== */
+  RefeicoesContainer: {
+    alignItems: "center",
+    marginTop: 10,
+  },
+
+  ImageRefeicoes: {
+    width: 340,
+    height: 180,
+    borderRadius: 12,
+  },
+
+  /* ===================== SOBREMESAS ===================== */
+  SobremesasContainer: {
+    alignItems: "center",
+    marginTop: 10,
+  },
+
+  ImageSobremesas: {
+    width: 340,
+    height: 180,
+    borderRadius: 12,
+  },
+
+  /* ===================== BEBIDAS ===================== */
+  BebidasContainer: {
+    alignItems: "center",
+    marginTop: 10,
+  },
+
+  ImageBebidas: {
+    width: 340,
+    height: 180,
+    borderRadius: 12,
+  },
+
+  cardFundo: {
+    backgroundColor: "#E0E0E0",
+    borderRadius: 16,
+    padding: 10,
+  },
+
+  textSobreImagem: {
+    position: "absolute",
+    top: 8,
+    left: 0,
+    right: 0,
+    textAlign: "center", // centraliza horizontalmente
+    fontSize: 13,
+    fontWeight: "600",
+    color: "#444",
+    backgroundColor: "#f2f2f2cc",
+    paddingHorizontal: 8,
+    paddingVertical: 2,
+    borderRadius: 8,
+    alignSelf: "center",
+  },
+
+  /* ===================== RODAPÉ ===================== */
   footer: {
+    flexDirection: "row",
+    justifyContent: "space-around",
+    alignItems: "center",
+    backgroundColor: "#f2f2f2",
+    height: 70,
     position: "absolute",
     bottom: 0,
     left: 0,
     right: 0,
-    height: 70,
-    backgroundColor: "#fff",
     borderTopWidth: 1,
-    borderTopColor: "#d9d9d9",
-    flexDirection: "row",
-    justifyContent: "space-around",
-    alignItems: "center",
-    paddingBottom: 5,
-    shadowColor: "#000",
-    shadowOffset: { width: 0, height: -2 },
-    shadowOpacity: 0.1,
-    shadowRadius: 4,
-    elevation: 5,
+    borderColor: "#ddd",
   },
 
   footerItem: {
     alignItems: "center",
-    justifyContent: "center",
-    flex: 1,
   },
 
   footerText: {
     fontSize: 12,
-    marginTop: 4,
     color: "#000",
+    marginTop: 3,
   },
 });
