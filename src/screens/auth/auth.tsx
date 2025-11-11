@@ -36,7 +36,7 @@ export const Auth = () => {
           value={cpf}
         />
         <TouchableOpacity
-          onPress={() => router.replace("/(stacks)/home-screen")}
+          onPress={() => router.replace("./(stacks)/home-screen")}
           style={styles.styleContetButton}
         >
           <Text style={styles.styleTextButton}>Entrar</Text>

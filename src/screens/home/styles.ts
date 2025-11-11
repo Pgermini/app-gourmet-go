@@ -29,7 +29,6 @@ export const styles = StyleSheet.create({
     color: "#000",
   },
 
-  /* ===================== MENU RÁPIDO (CARROSSEL) ===================== */
   menuRapidoContainer: {
     paddingHorizontal: 15,
     paddingVertical: 20,
@@ -41,7 +40,7 @@ export const styles = StyleSheet.create({
   },
 
   menuCardFundo: {
-    backgroundColor: "#E0E0E0", // fundo cinza claro
+    backgroundColor: "#E0E0E0",
     borderRadius: 16,
     width: 120,
     height: 140,
@@ -66,13 +65,12 @@ export const styles = StyleSheet.create({
     top: 10,
     left: 50,
     right: 0,
-    textAlign: "center", // centraliza o texto no card
+    textAlign: "center",
     fontSize: 12,
     fontWeight: "bold",
     color: "#000",
   },
 
-  /* ===================== LANCHES ===================== */
   lanchesContainer: {
     flexDirection: "row",
     justifyContent: "space-evenly",
@@ -91,7 +89,6 @@ export const styles = StyleSheet.create({
     borderRadius: 10,
   },
 
-  /* ===================== REFEIÇÕES ===================== */
   RefeicoesContainer: {
     alignItems: "center",
     marginTop: 10,
@@ -103,7 +100,6 @@ export const styles = StyleSheet.create({
     borderRadius: 12,
   },
 
-  /* ===================== SOBREMESAS ===================== */
   SobremesasContainer: {
     alignItems: "center",
     marginTop: 10,
@@ -115,7 +111,6 @@ export const styles = StyleSheet.create({
     borderRadius: 12,
   },
 
-  /* ===================== BEBIDAS ===================== */
   BebidasContainer: {
     alignItems: "center",
     marginTop: 10,
@@ -138,7 +133,7 @@ export const styles = StyleSheet.create({
     top: 8,
     left: 0,
     right: 0,
-    textAlign: "center", // centraliza horizontalmente
+    textAlign: "center",
     fontSize: 13,
     fontWeight: "600",
     color: "#444",
@@ -149,7 +144,6 @@ export const styles = StyleSheet.create({
     alignSelf: "center",
   },
 
-  /* ===================== RODAPÉ ===================== */
   footer: {
     flexDirection: "row",
     justifyContent: "space-around",

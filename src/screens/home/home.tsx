@@ -1,7 +1,9 @@
 import { MaterialCommunityIcons } from "@expo/vector-icons";
+import AntDesign from "@expo/vector-icons/AntDesign";
 import Entypo from "@expo/vector-icons/Entypo";
 import Feather from "@expo/vector-icons/Feather";
 import FontAwesome5 from "@expo/vector-icons/FontAwesome5";
+import { router } from "expo-router"; // ✅ manter apenas este
 import { Image, ScrollView, Text, TouchableOpacity, View } from "react-native";
 import { styles } from "./styles";
 
@@ -46,7 +48,21 @@ export const Home = () => {
             showsHorizontalScrollIndicator={false}
             contentContainerStyle={styles.menuRapidoContainer}
           >
+            {/* ÍCONE DE MENU QUE LEVA PARA lateral.tsx */}
+            <TouchableOpacity onPress={() => router.push("./Lateral")}>
+              <AntDesign
+                name="menu"
+                size={28}
+                color="black"
+                style={{ marginRight: 10 }}
+              />
+            </TouchableOpacity>
+
             {[
+              {
+                src: require("@/src/assets/subMenu/Lanches.png"),
+                nome: "Lanches",
+              },
               {
                 src: require("@/src/assets/subMenu/Refeições (2).png"),
                 nome: "Refeições",
