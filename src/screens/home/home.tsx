@@ -3,7 +3,7 @@ import AntDesign from "@expo/vector-icons/AntDesign";
 import Entypo from "@expo/vector-icons/Entypo";
 import Feather from "@expo/vector-icons/Feather";
 import FontAwesome5 from "@expo/vector-icons/FontAwesome5";
-import { router } from "expo-router"; // ✅ manter apenas este
+import { router } from "expo-router";
 import { Image, ScrollView, Text, TouchableOpacity, View } from "react-native";
 import { styles } from "./styles";
 
@@ -42,14 +42,14 @@ export const Home = () => {
             }}
           />
 
-          {/* ===== MENU RÁPIDO (CARROSSEL HORIZONTAL COM IMAGENS) ===== */}
           <ScrollView
             horizontal
             showsHorizontalScrollIndicator={false}
             contentContainerStyle={styles.menuRapidoContainer}
           >
-            {/* ÍCONE DE MENU QUE LEVA PARA lateral.tsx */}
-            <TouchableOpacity onPress={() => router.push("./Lateral")}>
+            <TouchableOpacity
+              onPress={() => router.replace("/Sidibar-screens")}
+            >
               <AntDesign
                 name="menu"
                 size={28}
@@ -92,7 +92,6 @@ export const Home = () => {
           <View style={styles.line} />
         </View>
 
-        {/* ===== LANCHES ===== */}
         <View>
           <Text style={styles.title}>Lanches</Text>
           <View style={styles.lanchesContainer}>
@@ -110,7 +109,6 @@ export const Home = () => {
           </View>
         </View>
 
-        {/* ===== REFEIÇÕES ===== */}
         <View>
           <Text style={styles.title}>Refeições</Text>
 
@@ -126,7 +124,6 @@ export const Home = () => {
           </View>
         </View>
 
-        {/* ===== SOBREMESAS ===== */}
         <View>
           <Text style={styles.title}>Sobremesas</Text>
 
@@ -142,7 +139,6 @@ export const Home = () => {
           </View>
         </View>
 
-        {/* ===== BEBIDAS ===== */}
         <View>
           <Text style={styles.title}>Bebidas</Text>
 
@@ -159,7 +155,6 @@ export const Home = () => {
         </View>
       </ScrollView>
 
-      {/* ===== RODAPÉ (footer) ===== */}
       <View style={styles.footer}>
         <TouchableOpacity style={styles.footerItem}>
           <Entypo name="home" size={26} color="black" />
