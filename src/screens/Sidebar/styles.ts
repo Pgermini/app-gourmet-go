@@ -67,4 +67,98 @@ export const styles = StyleSheet.create({
     height: 80,
     borderRadius: 10,
   },
+  SubTitle: {
+    fontSize: 18,
+    fontWeight: "bold",
+    marginLeft: 10,
+    color: "#000",
+  },
+
+  DestaquesContainer: {
+    flexDirection: "row",
+    flexWrap: "wrap",
+    justifyContent: "center",
+    alignItems: "center",
+    marginTop: 10,
+    gap: 15,
+  },
+
+  imgHamburguer: {
+    width: 100,
+    height: 90,
+    borderRadius: 15,
+    margin: 5,
+  },
+  imgEspaguete: {
+    width: 100,
+    height: 90,
+    borderRadius: 15,
+    margin: 5,
+  },
+  imgEmpadao: {
+    width: 100,
+    height: 90,
+    borderRadius: 15,
+    margin: 5,
+  },
+  imgSushi: {
+    width: 100,
+    height: 90,
+    borderRadius: 15,
+    margin: 5,
+  },
+  imgSalmao: {
+    width: 100,
+    height: 90,
+    borderRadius: 15,
+    margin: 5,
+  },
+  imgPet_Gato: {
+    width: 100,
+    height: 90,
+    borderRadius: 15,
+    margin: 5,
+  },
+  imgAcai: {
+    width: 100,
+    height: 90,
+    borderRadius: 15,
+    margin: 5,
+  },
+  imgFeijoada: {
+    width: 100,
+    height: 90,
+    borderRadius: 15,
+    margin: 5,
+  },
+  imgTacos: {
+    width: 100,
+    height: 90,
+    borderRadius: 15,
+    margin: 5,
+  },
+
+  footer: {
+    flexDirection: "row",
+    justifyContent: "space-around",
+    alignItems: "center",
+    backgroundColor: "#f2f2f2",
+    height: 70,
+    position: "absolute",
+    bottom: 0,
+    left: 0,
+    right: 0,
+    borderTopWidth: 1,
+    borderColor: "#ddd",
+  },
+
+  footerItem: {
+    alignItems: "center",
+  },
+
+  footerText: {
+    fontSize: 12,
+    color: "#000",
+    marginTop: 3,
+  },
 });

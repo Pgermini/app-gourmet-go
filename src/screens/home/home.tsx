@@ -95,11 +95,15 @@ export const Home = () => {
         <View>
           <Text style={styles.title}>Lanches</Text>
           <View style={styles.lanchesContainer}>
-            <Image
-              source={require("@/src/assets/lanches/pizza.png")}
-              style={styles.ImagePizza}
-              resizeMode="cover"
-            />
+            <TouchableOpacity
+              onPress={() => router.push("/Sidibar-Pizza-screens")}
+            >
+              <Image
+                source={require("@/src/assets/lanches/pizza.png")}
+                style={styles.ImagePizza}
+                resizeMode="cover"
+              />
+            </TouchableOpacity>
 
             <Image
               source={require("@/src/assets/lanches/Hamburguer.png")}

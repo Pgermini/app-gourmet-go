@@ -22,6 +22,7 @@ export default function RootLayout() {
         <Stack.Screen name="index" options={{ headerShown: true }} />
         <Stack.Screen name="(stacks)" options={{ headerShown: true }} />
         <Stack.Screen name="Sidebar" options={{ headerShown: false }} />
+        <Stack.Screen name="SidebarPizza" options={{ headerShown: false }} />
       </Stack>
       <StatusBar style="auto" />
     </ThemeProvider>
