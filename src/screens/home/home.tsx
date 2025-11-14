@@ -12,25 +12,6 @@ export const Home = () => {
     <View style={{ flex: 1, backgroundColor: "#fff" }}>
       <ScrollView contentContainerStyle={{ paddingBottom: 100 }}>
         <View style={styles.container}>
-          {/* Barra superior */}
-          <View style={styles.topBar}>
-            <TouchableOpacity>
-              <MaterialCommunityIcons
-                name="cart-variant"
-                size={28}
-                color="#000"
-              />
-            </TouchableOpacity>
-
-            <TouchableOpacity>
-              <MaterialCommunityIcons
-                name="bell-outline"
-                size={28}
-                color="#000"
-              />
-            </TouchableOpacity>
-          </View>
-
           {/* Logo */}
           <Image
             source={require("@/src/assets/logo/logo.png")}
@@ -105,11 +86,16 @@ export const Home = () => {
               />
             </TouchableOpacity>
 
-            <Image
-              source={require("@/src/assets/lanches/Hamburguer.png")}
-              style={styles.ImageHamburger}
-              resizeMode="cover"
-            />
+            <TouchableOpacity
+              onPress={() =>
+                router.push("/(stacks)/Sidibar-Hamburguer-screens")
+              }
+            >
+              <Image
+                source={require("@/src/assets/lanches/Hamburguer.png")}
+                style={styles.ImageHamburger}
+              />
+            </TouchableOpacity>
           </View>
         </View>
 

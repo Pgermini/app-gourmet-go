@@ -78,9 +78,9 @@ export const styles = StyleSheet.create({
   },
 
   ImagePizza: {
-    width: 160,
-    height: 120,
-    borderRadius: 10,
+    width: 150,
+    height: 115,
+    borderRadius: 20,
   },
 
   ImageHamburger: {

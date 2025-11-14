@@ -18,7 +18,7 @@ export const styles = StyleSheet.create({
 
   content: {
     paddingHorizontal: 2,
-    paddingBottom: 40,
+    paddingBottom: 100,
   },
 
   sectionTitle: {

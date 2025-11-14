@@ -18,11 +18,21 @@ export default function RootLayout() {
 
   return (
     <ThemeProvider value={colorScheme === "dark" ? DarkTheme : DefaultTheme}>
-      <Stack>
+      <Stack
+        screenOptions={{
+          contentStyle: {
+            backgroundColor: "#fff",
+          },
+        }}
+      >
         <Stack.Screen name="index" options={{ headerShown: true }} />
         <Stack.Screen name="(stacks)" options={{ headerShown: true }} />
         <Stack.Screen name="Sidebar" options={{ headerShown: false }} />
         <Stack.Screen name="SidebarPizza" options={{ headerShown: false }} />
+        <Stack.Screen
+          name="SidebarHamburguer"
+          options={{ headerShown: false }}
+        />
       </Stack>
       <StatusBar style="auto" />
     </ThemeProvider>
