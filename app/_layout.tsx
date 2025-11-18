@@ -33,6 +33,10 @@ export default function RootLayout() {
           name="SidebarHamburguer"
           options={{ headerShown: false }}
         />
+        <Stack.Screen
+          name="SidebarRefeições"
+          options={{ headerShown: false }}
+        />
       </Stack>
       <StatusBar style="auto" />
     </ThemeProvider>

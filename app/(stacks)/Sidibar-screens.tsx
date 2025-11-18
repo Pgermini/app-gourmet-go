@@ -1,5 +1,16 @@
 import Sidebar from "@/src/screens/Sidebar";
+import { Stack } from "expo-router";
 
-export default function SidebarScreen() {
-  return <Sidebar />;
+export default function SidibarScreen() {
+  return (
+    <>
+      <Stack.Screen
+        options={{
+          headerShown: false,
+        }}
+      />
+
+      <Sidebar />
+    </>
+  );
 }

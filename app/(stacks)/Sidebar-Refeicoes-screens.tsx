@@ -1,7 +1,7 @@
-import SidebarPizza from "@/src/screens/SidebarPizza";
+import SidebarRefeicoes from "@/src/screens/SidebarRefeicoes";
 import { Stack } from "expo-router";
 
-export default function SidebarPizzaScreen() {
+export default function SidebarRefeicoesScreen() {
   return (
     <>
       <Stack.Screen
@@ -9,8 +9,7 @@ export default function SidebarPizzaScreen() {
           headerShown: false,
         }}
       />
-
-      <SidebarPizza />
+      <SidebarRefeicoes />
     </>
   );
 }
