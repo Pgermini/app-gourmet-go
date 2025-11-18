@@ -1,8 +1,6 @@
 import { MaterialCommunityIcons } from "@expo/vector-icons";
 import AntDesign from "@expo/vector-icons/AntDesign";
 import Entypo from "@expo/vector-icons/Entypo";
-import Feather from "@expo/vector-icons/Feather";
-import FontAwesome5 from "@expo/vector-icons/FontAwesome5";
 import { router } from "expo-router";
 import { Image, ScrollView, Text, TouchableOpacity, View } from "react-native";
 import { styles } from "./styles";
@@ -29,6 +27,15 @@ export default function SidebarPizza() {
                 color="#000"
               />
             </TouchableOpacity>
+          </View>
+          <View style={styles.header}>
+            <TouchableOpacity
+              onPress={() => router.replace("/(stacks)/home-screen")}
+            >
+              <Entypo name="arrow-left" size={24} color="black" />
+            </TouchableOpacity>
+
+            <Text style={styles.headerTitle}>APROVEITE O GOURMET GO</Text>
           </View>
 
           {/* Logo */}
@@ -117,7 +124,9 @@ export default function SidebarPizza() {
             {/* Mussarela */}
             <View style={styles.saborCard}>
               <Image
-                source={require("@/src/assets/pizza/sabores/mussarela.png")}
+                source={{
+                  uri: "https://res.cloudinary.com/djdwgtphs/image/upload/v1763504409/mussarela_nncb4b.png",
+                }}
                 style={styles.saborImg}
               />
               <Text style={styles.saborLabel}>Mussarela</Text>
@@ -126,16 +135,20 @@ export default function SidebarPizza() {
             {/* Quatro Queijos */}
             <View style={styles.saborCard}>
               <Image
-                source={require("@/src/assets/pizza/sabores/quatro_queijo.png")}
+                source={{
+                  uri: "https://res.cloudinary.com/djdwgtphs/image/upload/v1763504410/quatro_queijo_wfjx71.png",
+                }}
                 style={styles.saborImg}
               />
               <Text style={styles.saborLabel}>Quatro Queijos</Text>
             </View>
 
-            {/* Frango c/ Catupiry */}
+            {/* Frango Catupiry */}
             <View style={styles.saborCard}>
               <Image
-                source={require("@/src/assets/pizza/sabores/FrangoCatupiry.png")}
+                source={{
+                  uri: "https://res.cloudinary.com/djdwgtphs/image/upload/v1763504411/FrangoCatupiry_zzl1v9.png",
+                }}
                 style={styles.saborImg}
               />
               <Text style={styles.saborLabel}>Frango c/ Catupiry</Text>
@@ -144,7 +157,9 @@ export default function SidebarPizza() {
             {/* Portuguesa */}
             <View style={styles.saborCard}>
               <Image
-                source={require("@/src/assets/pizza/sabores/portuguesa.png")}
+                source={{
+                  uri: "https://res.cloudinary.com/djdwgtphs/image/upload/v1763504410/portuguesa_ylmxpl.png",
+                }}
                 style={styles.saborImg}
               />
               <Text style={styles.saborLabel}>Portuguesa</Text>
@@ -153,16 +168,20 @@ export default function SidebarPizza() {
             {/* Calabresa */}
             <View style={styles.saborCard}>
               <Image
-                source={require("@/src/assets/pizza/sabores/Calabresa.png")}
+                source={{
+                  uri: "https://res.cloudinary.com/djdwgtphs/image/upload/v1763504408/Calabresa_v8i5jg.png",
+                }}
                 style={styles.saborImg}
               />
               <Text style={styles.saborLabel}>Calabresa</Text>
             </View>
 
-            {/* Bacon c/ Milho */}
+            {/* Bacon Milho */}
             <View style={styles.saborCard}>
               <Image
-                source={require("@/src/assets/pizza/sabores/BaconMilho.png")}
+                source={{
+                  uri: "https://res.cloudinary.com/djdwgtphs/image/upload/v1763504408/BaconMilho_n3xw5e.png",
+                }}
                 style={styles.saborImg}
               />
               <Text style={styles.saborLabel}>Bacon c/ Milho</Text>
@@ -171,7 +190,9 @@ export default function SidebarPizza() {
             {/* Napolitana */}
             <View style={styles.saborCard}>
               <Image
-                source={require("@/src/assets/pizza/sabores/Napolitana.png")}
+                source={{
+                  uri: "https://res.cloudinary.com/djdwgtphs/image/upload/v1763504410/Napolitana_xq4vo0.png",
+                }}
                 style={styles.saborImg}
               />
               <Text style={styles.saborLabel}>Napolitana</Text>
@@ -180,7 +201,9 @@ export default function SidebarPizza() {
             {/* Lombo Canadense */}
             <View style={styles.saborCard}>
               <Image
-                source={require("@/src/assets/pizza/sabores/LomboCanadense.png")}
+                source={{
+                  uri: "https://res.cloudinary.com/djdwgtphs/image/upload/v1763504408/LomboCanadense_yxhbsk.png",
+                }}
                 style={styles.saborImg}
               />
               <Text style={styles.saborLabel}>Lombo Canadense</Text>
@@ -188,31 +211,6 @@ export default function SidebarPizza() {
           </View>
         </View>
       </ScrollView>
-      <View style={styles.footer}>
-        <TouchableOpacity style={styles.footerItem}>
-          <Entypo name="home" size={26} color="black" />
-          <Text style={styles.footerText}>Início</Text>
-        </TouchableOpacity>
-
-        <TouchableOpacity style={styles.footerItem}>
-          <Feather name="search" size={26} color="black" />
-          <Text style={styles.footerText}>Buscar</Text>
-        </TouchableOpacity>
-
-        <TouchableOpacity style={styles.footerItem}>
-          <MaterialCommunityIcons
-            name="list-box-outline"
-            size={26}
-            color="black"
-          />
-          <Text style={styles.footerText}>Pedidos</Text>
-        </TouchableOpacity>
-
-        <TouchableOpacity style={styles.footerItem}>
-          <FontAwesome5 name="user-alt" size={24} color="black" />
-          <Text style={styles.footerText}>Perfil</Text>
-        </TouchableOpacity>
-      </View>
     </View>
   );
 }

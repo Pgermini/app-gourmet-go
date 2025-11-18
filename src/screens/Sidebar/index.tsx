@@ -1,7 +1,4 @@
-import { MaterialCommunityIcons } from "@expo/vector-icons";
 import Entypo from "@expo/vector-icons/Entypo";
-import Feather from "@expo/vector-icons/Feather";
-import FontAwesome5 from "@expo/vector-icons/FontAwesome5";
 import { useRouter } from "expo-router";
 import { Image, ScrollView, Text, TouchableOpacity, View } from "react-native";
 import { styles } from "./styles";
@@ -53,79 +50,79 @@ export default function Sidebar() {
 
           <View style={styles.DestaquesContainer}>
             <Image
-              source={require("@/src/assets/Img_sidibar/hamburguer.png")}
-              style={styles.imgHamburguer}
+              source={{
+                uri: "https://res.cloudinary.com/djdwgtphs/image/upload/v1763504405/hamburguer_rdzjgo.png",
+              }}
+              style={styles.destaqueImg}
               resizeMode="cover"
             />
+
             <Image
-              source={require("@/src/assets/Img_sidibar/espaguete.png")}
-              style={styles.imgEspaguete}
+              source={{
+                uri: "https://res.cloudinary.com/djdwgtphs/image/upload/v1763504404/espaguete_olgaid.png",
+              }}
+              style={styles.destaqueImg}
               resizeMode="cover"
             />
+
             <Image
-              source={require("@/src/assets/Img_sidibar/empadão.png")}
-              style={styles.imgEmpadao}
+              source={{
+                uri: "https://res.cloudinary.com/djdwgtphs/image/upload/v1763504404/empad%C3%A3o_p60xn6.png",
+              }}
+              style={styles.destaqueImg}
               resizeMode="cover"
             />
+
             <Image
-              source={require("@/src/assets/Img_sidibar/sushi.png")}
-              style={styles.imgSushi}
+              source={{
+                uri: "https://res.cloudinary.com/djdwgtphs/image/upload/v1763504406/sushi_s0rofe.png",
+              }}
+              style={styles.destaqueImg}
               resizeMode="cover"
             />
+
             <Image
-              source={require("@/src/assets/Img_sidibar/salmão.png")}
-              style={styles.imgSalmao}
+              source={{
+                uri: "https://res.cloudinary.com/djdwgtphs/image/upload/v1763504407/salm%C3%A3o_ov3b1q.png",
+              }}
+              style={styles.destaqueImg}
               resizeMode="cover"
             />
+
             <Image
-              source={require("@/src/assets/Img_sidibar/pet_gato.png")}
-              style={styles.imgPet_Gato}
+              source={{
+                uri: "https://res.cloudinary.com/djdwgtphs/image/upload/v1763504406/pet_gato_hq97qg.png",
+              }}
+              style={styles.destaqueImg}
               resizeMode="cover"
             />
+
             <Image
-              source={require("@/src/assets/Img_sidibar/açai.png")}
-              style={styles.imgAcai}
+              source={{
+                uri: "https://res.cloudinary.com/djdwgtphs/image/upload/v1763504403/a%C3%A7ai_dn7g37.png",
+              }}
+              style={styles.destaqueImg}
               resizeMode="cover"
             />
+
             <Image
-              source={require("@/src/assets/Img_sidibar/feijoada.png")}
-              style={styles.imgFeijoada}
+              source={{
+                uri: "https://res.cloudinary.com/djdwgtphs/image/upload/v1763504405/feijoada_lfphp2.png",
+              }}
+              style={styles.destaqueImg}
               resizeMode="cover"
             />
+
             <Image
-              source={require("@/src/assets/Img_sidibar/tacos.png")}
-              style={styles.imgTacos}
+              source={{
+                uri: "https://res.cloudinary.com/djdwgtphs/image/upload/v1763504407/tacos_l3xcd6.png",
+              }}
+              style={styles.destaqueImg}
               resizeMode="cover"
             />
           </View>
         </View>
       </ScrollView>
-
-      <View style={styles.footer}>
-        <TouchableOpacity style={styles.footerItem}>
-          <Entypo name="home" size={26} color="black" />
-          <Text style={styles.footerText}>Início</Text>
-        </TouchableOpacity>
-
-        <TouchableOpacity style={styles.footerItem}>
-          <Feather name="search" size={26} color="black" />
-          <Text style={styles.footerText}>Buscar</Text>
-        </TouchableOpacity>
-
-        <TouchableOpacity style={styles.footerItem}>
-          <MaterialCommunityIcons
-            name="list-box-outline"
-            size={26}
-            color="black"
-          />
-          <Text style={styles.footerText}>Pedidos</Text>
-        </TouchableOpacity>
-
-        <TouchableOpacity style={styles.footerItem}>
-          <FontAwesome5 name="user-alt" size={24} color="black" />
-          <Text style={styles.footerText}>Perfil</Text>
-        </TouchableOpacity>
-      </View>
     </View>
   );
 }

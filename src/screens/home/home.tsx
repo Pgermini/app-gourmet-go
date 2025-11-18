@@ -1,8 +1,4 @@
-import { MaterialCommunityIcons } from "@expo/vector-icons";
 import AntDesign from "@expo/vector-icons/AntDesign";
-import Entypo from "@expo/vector-icons/Entypo";
-import Feather from "@expo/vector-icons/Feather";
-import FontAwesome5 from "@expo/vector-icons/FontAwesome5";
 import { router } from "expo-router";
 import { Image, ScrollView, Text, TouchableOpacity, View } from "react-native";
 import { styles } from "./styles";
@@ -101,16 +97,19 @@ export const Home = () => {
 
         <View>
           <Text style={styles.title}>Refeições</Text>
-
           <View style={styles.RefeicoesContainer}>
-            <View style={styles.ImageRefeicoes}>
-              <Image
-                source={require("@/src/assets/Refeições/refeições.png")}
-                style={styles.ImageRefeicoes}
-                resizeMode="cover"
-              />
-              <Text style={styles.textSobreImagem}>PRATOS PRINCIPAIS</Text>
-            </View>
+            <TouchableOpacity
+              onPress={() => router.push("/(stacks)/Sidebar-Refeicoes-screens")}
+            >
+              <View style={styles.ImageRefeicoes}>
+                <Image
+                  source={require("@/src/assets/Refeições/refeições.png")}
+                  style={styles.ImageRefeicoes}
+                  resizeMode="cover"
+                />
+                <Text style={styles.textSobreImagem}>PRATOS PRINCIPAIS</Text>
+              </View>
+            </TouchableOpacity>
           </View>
         </View>
 
@@ -144,32 +143,6 @@ export const Home = () => {
           </View>
         </View>
       </ScrollView>
-
-      <View style={styles.footer}>
-        <TouchableOpacity style={styles.footerItem}>
-          <Entypo name="home" size={26} color="black" />
-          <Text style={styles.footerText}>Início</Text>
-        </TouchableOpacity>
-
-        <TouchableOpacity style={styles.footerItem}>
-          <Feather name="search" size={26} color="black" />
-          <Text style={styles.footerText}>Buscar</Text>
-        </TouchableOpacity>
-
-        <TouchableOpacity style={styles.footerItem}>
-          <MaterialCommunityIcons
-            name="list-box-outline"
-            size={26}
-            color="black"
-          />
-          <Text style={styles.footerText}>Pedidos</Text>
-        </TouchableOpacity>
-
-        <TouchableOpacity style={styles.footerItem}>
-          <FontAwesome5 name="user-alt" size={24} color="black" />
-          <Text style={styles.footerText}>Perfil</Text>
-        </TouchableOpacity>
-      </View>
     </View>
   );
 };

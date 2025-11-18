@@ -8,6 +8,7 @@ import { StatusBar } from "expo-status-bar";
 import "react-native-reanimated";
 
 import { useColorScheme } from "@/hooks/use-color-scheme";
+import Footer from "@/src/components/Footer";
 
 export const unstable_settings = {
   anchor: "(tabs)",
@@ -18,26 +19,42 @@ export default function RootLayout() {
 
   return (
     <ThemeProvider value={colorScheme === "dark" ? DarkTheme : DefaultTheme}>
-      <Stack
-        screenOptions={{
-          contentStyle: {
-            backgroundColor: "#fff",
-          },
-        }}
-      >
-        <Stack.Screen name="index" options={{ headerShown: true }} />
-        <Stack.Screen name="(stacks)" options={{ headerShown: true }} />
-        <Stack.Screen name="Sidebar" options={{ headerShown: false }} />
-        <Stack.Screen name="SidebarPizza" options={{ headerShown: false }} />
-        <Stack.Screen
-          name="SidebarHamburguer"
-          options={{ headerShown: false }}
-        />
-        <Stack.Screen
-          name="SidebarRefeições"
-          options={{ headerShown: false }}
-        />
-      </Stack>
+      <>
+        <Stack
+          screenOptions={{
+            contentStyle: {
+              backgroundColor: "#fff",
+            },
+          }}
+        >
+          <Stack.Screen name="index" options={{ headerShown: true }} />
+          <Stack.Screen name="(stacks)" options={{ headerShown: true }} />
+
+          <Stack.Screen
+            name="(stacks)/Sidibar-screens"
+            options={{ headerShown: false }}
+          />
+
+          <Stack.Screen
+            name="(stacks)/Sidibar-Pizza-screens"
+            options={{ headerShown: false }}
+          />
+
+          <Stack.Screen
+            name="(stacks)/Sidebar-Hamburguer-screens"
+            options={{ headerShown: false }}
+          />
+
+          <Stack.Screen
+            name="(stacks)/Sidebar-Refeicoes-screens"
+            options={{ headerShown: false }}
+          />
+        </Stack>
+
+        {/* Footer global */}
+        <Footer />
+      </>
+
       <StatusBar style="auto" />
     </ThemeProvider>
   );
