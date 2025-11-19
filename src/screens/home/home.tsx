@@ -117,14 +117,18 @@ export const Home = () => {
           <Text style={styles.title}>Sobremesas</Text>
 
           <View style={styles.SobremesasContainer}>
-            <View style={styles.ImageSobremesas}>
-              <Image
-                source={require("@/src/assets/Sobremesas/Sobremesas.png")}
-                style={styles.ImageSobremesas}
-                resizeMode="cover"
-              />
-              <Text style={styles.textSobreImagem}>DOCES / SORVETES</Text>
-            </View>
+            <TouchableOpacity
+              onPress={() => router.push("/(stacks)/Sidebar-Sobremsa-screens")}
+            >
+              <View style={styles.ImageSobremesas}>
+                <Image
+                  source={require("@/src/assets/Sobremesas/Sobremesas.png")}
+                  style={styles.ImageSobremesas}
+                  resizeMode="cover"
+                />
+                <Text style={styles.textSobreImagem}>DOCES / SORVETES</Text>
+              </View>
+            </TouchableOpacity>
           </View>
         </View>
 
