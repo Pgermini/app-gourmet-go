@@ -49,8 +49,14 @@ export default function RootLayout() {
             name="(stacks)/Sidebar-Refeicoes-screens"
             options={{ headerShown: false }}
           />
+
           <Stack.Screen
             name="SidebarSobremesas"
+            options={{ headerShown: false }}
+          />
+
+          <Stack.Screen
+            name="(stacks)/Sidebar-Bebidas-screens"
             options={{ headerShown: false }}
           />
         </Stack>

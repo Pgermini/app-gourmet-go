@@ -136,14 +136,18 @@ export const Home = () => {
           <Text style={styles.title}>Bebidas</Text>
 
           <View style={styles.BebidasContainer}>
-            <View style={styles.cardFundo}>
-              <Image
-                source={require("@/src/assets/Bebidas/Bebidas.png")}
-                style={styles.ImageBebidas}
-                resizeMode="cover"
-              />
-              <Text style={styles.textSobreImagem}>DRINKS / REFRESCOS</Text>
-            </View>
+            <TouchableOpacity
+              onPress={() => router.push("/(stacks)/Sidebar-Bebidas-screens")}
+            >
+              <View style={styles.ImageBebidas}>
+                <Image
+                  source={require("@/src/assets/Bebidas/Bebidas.png")}
+                  style={styles.ImageBebidas}
+                  resizeMode="cover"
+                />
+                <Text style={styles.textSobreImagem}>Bebidas</Text>
+              </View>
+            </TouchableOpacity>
           </View>
         </View>
       </ScrollView>

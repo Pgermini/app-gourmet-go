@@ -81,9 +81,9 @@ export const styles = StyleSheet.create({
     marginTop: 10,
   },
 
-  bigDoce: {
+  bigDribk: {
     width: "95%",
-    height: 240,
+    height: 245,
     borderRadius: 52,
     marginTop: 15,
     alignSelf: "center",

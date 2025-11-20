@@ -113,13 +113,11 @@ export default function SidebarRefeicoes() {
 
           <View style={styles.blocoImagem}>
             <Image
-              source={require("@/src/assets/PratoPrincipal/Tacos.png")}
+              source={require("@/src/assets/Refeições/refeições.png")}
               style={styles.imagemGrande}
             />
             <Text style={styles.textoSobreImagem}>PRATOS PRINCIPAIS</Text>
           </View>
-
-          {/* GRID DE CARDS */}
           {/* GRID DE CARDS */}
           <View style={styles.grid}>
             <View style={styles.card}>

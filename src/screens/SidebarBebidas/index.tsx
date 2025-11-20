@@ -5,7 +5,7 @@ import { router } from "expo-router";
 import { Image, ScrollView, Text, TouchableOpacity, View } from "react-native";
 import { styles } from "./styles";
 
-export default function SidebarPizza() {
+export default function SidebarBebidas() {
   return (
     <View>
       <ScrollView contentContainerStyle={{ paddingBottom: 40 }}>
@@ -106,94 +106,74 @@ export default function SidebarPizza() {
             </View>
           </ScrollView>
 
-          <Text style={styles.titleSection}>Sobremessas</Text>
+          <Text style={styles.titleSection}>Bebidas</Text>
 
-          <Text style={styles.titlePizzas}>DOCES / SORVETES</Text>
+          <Text style={styles.titlePizzas}>DRINKS</Text>
 
           <Image
-            source={require("@/src/assets/Sobremesas/Sobremesas.png")}
-            style={styles.bigDoce}
+            source={require("@/src/assets/Bebidas/Bebidas.png")}
+            style={styles.bigDribk}
           />
 
           <View style={styles.gridContainer}>
             <View style={styles.saborCard}>
               <Image
                 source={{
-                  uri: "https://res.cloudinary.com/djdwgtphs/image/upload/v1763578146/panqueca_doce_uazdoc.webp",
+                  uri: "https://res.cloudinary.com/djdwgtphs/image/upload/v1763579230/milkshake_de_morango_fnws3b.webp",
                 }}
                 style={styles.saborImg}
               />
-              <Text style={styles.saborLabel}>Panqueca Doce</Text>
+              <Text style={styles.saborLabel}>Milkshake de Morango</Text>
             </View>
 
             <View style={styles.saborCard}>
               <Image
                 source={{
-                  uri: "https://res.cloudinary.com/djdwgtphs/image/upload/v1763578152/crepe_de_nutella_ttyisg.jpg",
+                  uri: "https://res.cloudinary.com/djdwgtphs/image/upload/v1763579231/caf%C3%A9_expresso_pys56t.jpg",
                 }}
                 style={styles.saborImg}
               />
-              <Text style={styles.saborLabel}>Crepe de Nutella</Text>
+              <Text style={styles.saborLabel}>Café Expresso</Text>
             </View>
 
             <View style={styles.saborCard}>
               <Image
                 source={{
-                  uri: "https://res.cloudinary.com/djdwgtphs/image/upload/v1763578149/pav%C3%AA_de_chocolate_sgfj7k.png",
+                  uri: "https://res.cloudinary.com/djdwgtphs/image/upload/v1763579233/Cappuccino_bu3tbp.jpg",
                 }}
                 style={styles.saborImg}
               />
-              <Text style={styles.saborLabel}>Pavê de Chocolate</Text>
+              <Text style={styles.saborLabel}>Cappuccino</Text>
             </View>
 
             <View style={styles.saborCard}>
               <Image
                 source={{
-                  uri: "https://res.cloudinary.com/djdwgtphs/image/upload/v1763578147/tiramis%C3%B9_hewsll.webp",
+                  uri: "https://res.cloudinary.com/djdwgtphs/image/upload/v1763579222/suco_de_laranja_xmei0f.webp",
                 }}
                 style={styles.saborImg}
               />
-              <Text style={styles.saborLabel}>Tiramisù</Text>
+              <Text style={styles.saborLabel}>Suco de Laranja</Text>
             </View>
 
             <View style={styles.saborCard}>
               <Image
                 source={{
-                  uri: "https://res.cloudinary.com/djdwgtphs/image/upload/v1763578833/petit-gateau_nltozg.jpg",
+                  uri: "https://res.cloudinary.com/djdwgtphs/image/upload/v1763579223/caipirinhas_xz1kqh.jpg",
                 }}
                 style={styles.saborImg}
               />
-              <Text style={styles.saborLabel}>Petit Gateau</Text>
+              <Text style={styles.saborLabel}>Caipirinha</Text>
             </View>
 
             <View style={styles.saborCard}>
               <Image
                 source={{
-                  uri: "https://res.cloudinary.com/djdwgtphs/image/upload/v1763578833/brownie_com_sorvete_rsxiyl.jpg",
+                  uri: "https://res.cloudinary.com/djdwgtphs/image/upload/v1763579223/suco-verde-detox_mlqztk.jpg",
                 }}
                 style={styles.saborImg}
               />
-              <Text style={styles.saborLabel}>Brownie com Sorvete</Text>
-            </View>
-
-            <View style={styles.saborCard}>
-              <Image
-                source={{
-                  uri: "https://res.cloudinary.com/djdwgtphs/image/upload/v1763578150/sorvete_artesanal_f6kmxr.jpg",
-                }}
-                style={styles.saborImg}
-              />
-              <Text style={styles.saborLabel}>Sorvete Artesanal</Text>
-            </View>
-
-            <View style={styles.saborCard}>
-              <Image
-                source={{
-                  uri: "https://res.cloudinary.com/djdwgtphs/image/upload/v1763578148/a%C3%A7a%C3%AD_de_tigela_zbwmdu.jpg",
-                }}
-                style={styles.saborImg}
-              />
-              <Text style={styles.saborLabel}>Açaí na Tigela</Text>
+              <Text style={styles.saborLabel}>Suco Detox Verde</Text>
             </View>
           </View>
         </View>
