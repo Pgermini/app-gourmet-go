@@ -1,11 +1,10 @@
 import { SubMenu } from "@/src/components/MenuGlobal/SubMenuGlobal";
 import { MaterialCommunityIcons } from "@expo/vector-icons";
-import Entypo from "@expo/vector-icons/Entypo";
 import { router } from "expo-router";
 import { Image, ScrollView, Text, TouchableOpacity, View } from "react-native";
 import { styles } from "./styles";
 
-export default function SidebarPizza() {
+export default function SidebarSobremesas() {
   return (
     <View>
       <ScrollView contentContainerStyle={{ paddingBottom: 40 }}>
@@ -28,15 +27,6 @@ export default function SidebarPizza() {
               />
             </TouchableOpacity>
           </View>
-          <View style={styles.header}>
-            <TouchableOpacity
-              onPress={() => router.replace("/(stacks)/home-screen")}
-            >
-              <Entypo name="arrow-left" size={24} color="black" />
-            </TouchableOpacity>
-
-            <Text style={styles.headerTitle}>APROVEITE O GOURMET GO</Text>
-          </View>
 
           {/* Logo */}
           <Image
@@ -46,107 +36,94 @@ export default function SidebarPizza() {
 
           <SubMenu />
 
-          {/* Lanches */}
-          <Text style={styles.titleSection}>Lanches</Text>
+          <Text style={styles.titleSection}>Sobremessas</Text>
 
-          {/* Pizzas */}
-          <Text style={styles.titlePizzas}>PIZZAS</Text>
+          <Text style={styles.titlePizzas}>DOCES / SORVETES</Text>
 
           <Image
-            source={require("@/src/assets/lanches/pizza.png")}
-            style={styles.bigPizza}
+            source={require("@/src/assets/Sobremesas/Sobremesas.png")}
+            style={styles.bigDoce}
           />
 
-          {/* Sabores */}
-          <Text style={styles.titleSabores}>SABORES</Text>
-
           <View style={styles.gridContainer}>
-            {/* Mussarela */}
             <View style={styles.saborCard}>
               <Image
                 source={{
-                  uri: "https://res.cloudinary.com/djdwgtphs/image/upload/v1763504409/mussarela_nncb4b.png",
+                  uri: "https://res.cloudinary.com/djdwgtphs/image/upload/v1763578146/panqueca_doce_uazdoc.webp",
                 }}
                 style={styles.saborImg}
               />
-              <Text style={styles.saborLabel}>Mussarela</Text>
+              <Text style={styles.saborLabel}>Panqueca Doce</Text>
             </View>
 
-            {/* Quatro Queijos */}
             <View style={styles.saborCard}>
               <Image
                 source={{
-                  uri: "https://res.cloudinary.com/djdwgtphs/image/upload/v1763504410/quatro_queijo_wfjx71.png",
+                  uri: "https://res.cloudinary.com/djdwgtphs/image/upload/v1763578152/crepe_de_nutella_ttyisg.jpg",
                 }}
                 style={styles.saborImg}
               />
-              <Text style={styles.saborLabel}>Quatro Queijos</Text>
+              <Text style={styles.saborLabel}>Crepe de Nutella</Text>
             </View>
 
-            {/* Frango Catupiry */}
             <View style={styles.saborCard}>
               <Image
                 source={{
-                  uri: "https://res.cloudinary.com/djdwgtphs/image/upload/v1763504411/FrangoCatupiry_zzl1v9.png",
+                  uri: "https://res.cloudinary.com/djdwgtphs/image/upload/v1763578149/pav%C3%AA_de_chocolate_sgfj7k.png",
                 }}
                 style={styles.saborImg}
               />
-              <Text style={styles.saborLabel}>Frango c/ Catupiry</Text>
+              <Text style={styles.saborLabel}>Pavê de Chocolate</Text>
             </View>
 
-            {/* Portuguesa */}
             <View style={styles.saborCard}>
               <Image
                 source={{
-                  uri: "https://res.cloudinary.com/djdwgtphs/image/upload/v1763504410/portuguesa_ylmxpl.png",
+                  uri: "https://res.cloudinary.com/djdwgtphs/image/upload/v1763578147/tiramis%C3%B9_hewsll.webp",
                 }}
                 style={styles.saborImg}
               />
-              <Text style={styles.saborLabel}>Portuguesa</Text>
+              <Text style={styles.saborLabel}>Tiramisù</Text>
             </View>
 
-            {/* Calabresa */}
             <View style={styles.saborCard}>
               <Image
                 source={{
-                  uri: "https://res.cloudinary.com/djdwgtphs/image/upload/v1763504408/Calabresa_v8i5jg.png",
+                  uri: "https://res.cloudinary.com/djdwgtphs/image/upload/v1763578833/petit-gateau_nltozg.jpg",
                 }}
                 style={styles.saborImg}
               />
-              <Text style={styles.saborLabel}>Calabresa</Text>
+              <Text style={styles.saborLabel}>Petit Gateau</Text>
             </View>
 
-            {/* Bacon Milho */}
             <View style={styles.saborCard}>
               <Image
                 source={{
-                  uri: "https://res.cloudinary.com/djdwgtphs/image/upload/v1763504408/BaconMilho_n3xw5e.png",
+                  uri: "https://res.cloudinary.com/djdwgtphs/image/upload/v1763578833/brownie_com_sorvete_rsxiyl.jpg",
                 }}
                 style={styles.saborImg}
               />
-              <Text style={styles.saborLabel}>Bacon c/ Milho</Text>
+              <Text style={styles.saborLabel}>Brownie com Sorvete</Text>
             </View>
 
-            {/* Napolitana */}
             <View style={styles.saborCard}>
               <Image
                 source={{
-                  uri: "https://res.cloudinary.com/djdwgtphs/image/upload/v1763504410/Napolitana_xq4vo0.png",
+                  uri: "https://res.cloudinary.com/djdwgtphs/image/upload/v1763578150/sorvete_artesanal_f6kmxr.jpg",
                 }}
                 style={styles.saborImg}
               />
-              <Text style={styles.saborLabel}>Napolitana</Text>
+              <Text style={styles.saborLabel}>Sorvete Artesanal</Text>
             </View>
 
-            {/* Lombo Canadense */}
             <View style={styles.saborCard}>
               <Image
                 source={{
-                  uri: "https://res.cloudinary.com/djdwgtphs/image/upload/v1763504408/LomboCanadense_yxhbsk.png",
+                  uri: "https://res.cloudinary.com/djdwgtphs/image/upload/v1763578148/a%C3%A7a%C3%AD_de_tigela_zbwmdu.jpg",
                 }}
                 style={styles.saborImg}
               />
-              <Text style={styles.saborLabel}>Lombo Canadense</Text>
+              <Text style={styles.saborLabel}>Açaí na Tigela</Text>
             </View>
           </View>
         </View>

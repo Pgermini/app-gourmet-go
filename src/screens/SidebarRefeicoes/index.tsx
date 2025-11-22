@@ -1,6 +1,5 @@
+import { SubMenu } from "@/src/components/MenuGlobal/SubMenuGlobal";
 import { MaterialCommunityIcons } from "@expo/vector-icons";
-import AntDesign from "@expo/vector-icons/AntDesign";
-import Entypo from "@expo/vector-icons/Entypo";
 import { router } from "expo-router";
 import { Image, ScrollView, Text, TouchableOpacity, View } from "react-native";
 import { styles } from "./styles";
@@ -28,15 +27,7 @@ export default function SidebarRefeicoes() {
               />
             </TouchableOpacity>
           </View>
-          <View style={styles.header}>
-            <TouchableOpacity
-              onPress={() => router.replace("/(stacks)/home-screen")}
-            >
-              <Entypo name="arrow-left" size={24} color="black" />
-            </TouchableOpacity>
 
-            <Text style={styles.headerTitle}>APROVEITE O GOURMET GO</Text>
-          </View>
           {/* Logo */}
           <View>
             <Image
@@ -45,67 +36,7 @@ export default function SidebarRefeicoes() {
             />
           </View>
 
-          {/* Menu Rápido */}
-          <ScrollView
-            horizontal
-            showsHorizontalScrollIndicator={false}
-            contentContainerStyle={styles.menuRapidoContainer}
-          >
-            <TouchableOpacity
-              onPress={() => router.replace("/Sidibar-screens")}
-            >
-              <AntDesign
-                name="menu"
-                size={28}
-                color="black"
-                style={{ marginRight: 15 }}
-              />
-            </TouchableOpacity>
-
-            {/* Item 1 */}
-            <View style={styles.menuItem}>
-              <View style={styles.menuCardFundo}>
-                <Image
-                  source={require("@/src/assets/subMenu/Lanches.png")}
-                  style={styles.menuImage}
-                />
-                <Text style={styles.menuLabel}>Lanches</Text>
-              </View>
-            </View>
-
-            {/* Item 2 */}
-            <View style={styles.menuItem}>
-              <View style={styles.menuCardFundo}>
-                <Image
-                  source={require("@/src/assets/subMenu/Refeições (2).png")}
-                  style={styles.menuImage}
-                />
-                <Text style={styles.menuLabel}>Refeições</Text>
-              </View>
-            </View>
-
-            {/* Item 3 */}
-            <View style={styles.menuItem}>
-              <View style={styles.menuCardFundo}>
-                <Image
-                  source={require("@/src/assets/subMenu/Sobremesas (2).png")}
-                  style={styles.menuImage}
-                />
-                <Text style={styles.menuLabel}>Sobremesas</Text>
-              </View>
-            </View>
-
-            {/* Item 4 */}
-            <View style={styles.menuItem}>
-              <View style={styles.menuCardFundo}>
-                <Image
-                  source={require("@/src/assets/subMenu/Bebidas (2).png")}
-                  style={styles.menuImage}
-                />
-                <Text style={styles.menuLabel}>Bebidas</Text>
-              </View>
-            </View>
-          </ScrollView>
+          <SubMenu />
 
           {/* Imagem grande */}
           <Text style={styles.title}>Refeições</Text>

@@ -34,37 +34,45 @@ export default function RootLayout() {
             name="(stacks)/Sidibar-screens"
             options={{ headerShown: false }}
           />
-
           <Stack.Screen
             name="(stacks)/Sidibar-Pizza-screens"
             options={{ headerShown: false }}
           />
-
           <Stack.Screen
             name="(stacks)/Sidebar-Hamburguer-screens"
             options={{ headerShown: false }}
           />
-
           <Stack.Screen
             name="(stacks)/Sidebar-Refeicoes-screens"
             options={{ headerShown: false }}
           />
-
           <Stack.Screen
             name="SidebarSobremesas"
             options={{ headerShown: false }}
           />
-
           <Stack.Screen
             name="(stacks)/Sidebar-Bebidas-screens"
+            options={{ headerShown: false }}
+          />
+          <Stack.Screen
+            name="(stacks)/perfil"
+            options={{ headerShown: false }}
+          />
+          <Stack.Screen
+            name="(stacks)/Dados-Conta-Screens"
+            options={{ headerShown: false }}
+          />
+
+          {/* 🔥 ESTA AQUI AGORA NO LUGAR CERTO */}
+          <Stack.Screen
+            name="(stacks)/pagamentos-screens"
             options={{ headerShown: false }}
           />
         </Stack>
 
         <Footer />
+        <StatusBar style="auto" />
       </>
-
-      <StatusBar style="auto" />
     </ThemeProvider>
   );
 }

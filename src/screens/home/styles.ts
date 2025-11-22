@@ -20,48 +20,6 @@ export const styles = StyleSheet.create({
     color: "#000",
   },
 
-  menuRapidoContainer: {
-    paddingHorizontal: 15,
-    paddingVertical: 20,
-    gap: 15,
-  },
-
-  menuItem: {
-    marginRight: 15,
-  },
-
-  menuCardFundo: {
-    backgroundColor: "#ffffffff",
-    borderRadius: 16,
-    width: 120,
-    height: 140,
-    justifyContent: "center",
-    alignItems: "center",
-    position: "relative",
-    shadowColor: "#000",
-    shadowOpacity: 0.1,
-    shadowOffset: { width: 0, height: 2 },
-    shadowRadius: 4,
-    elevation: 3,
-  },
-
-  menuImage: {
-    width: 100,
-    height: 100,
-    borderRadius: 12,
-  },
-
-  menuLabel: {
-    position: "absolute",
-    top: 10,
-    left: 50,
-    right: 0,
-    textAlign: "center",
-    fontSize: 12,
-    fontWeight: "bold",
-    color: "#000",
-  },
-
   lanchesContainer: {
     flexDirection: "row",
     justifyContent: "space-evenly",

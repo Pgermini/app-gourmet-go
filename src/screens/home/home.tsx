@@ -1,4 +1,4 @@
-import AntDesign from "@expo/vector-icons/AntDesign";
+import { SubMenu } from "@/src/components/MenuGlobal/SubMenuGlobal";
 import { router } from "expo-router";
 import { Image, ScrollView, Text, TouchableOpacity, View } from "react-native";
 import { styles } from "./styles";
@@ -19,52 +19,7 @@ export const Home = () => {
             }}
           />
 
-          <ScrollView
-            horizontal
-            showsHorizontalScrollIndicator={false}
-            contentContainerStyle={styles.menuRapidoContainer}
-          >
-            <TouchableOpacity
-              onPress={() => router.replace("/Sidibar-screens")}
-            >
-              <AntDesign
-                name="menu"
-                size={28}
-                color="black"
-                style={{ marginRight: 10 }}
-              />
-            </TouchableOpacity>
-
-            {[
-              {
-                src: require("@/src/assets/subMenu/Lanches.png"),
-                nome: "Lanches",
-              },
-              {
-                src: require("@/src/assets/subMenu/Refeições (2).png"),
-                nome: "Refeições",
-              },
-              {
-                src: require("@/src/assets/subMenu/Sobremesas (2).png"),
-                nome: "Sobremesas",
-              },
-              {
-                src: require("@/src/assets/subMenu/Bebidas (2).png"),
-                nome: "Bebidas",
-              },
-            ].map((item, index) => (
-              <TouchableOpacity key={index} style={styles.menuItem}>
-                <View style={styles.menuCardFundo}>
-                  <Image
-                    source={item.src}
-                    style={styles.menuImage}
-                    resizeMode="cover"
-                  />
-                  <Text style={styles.menuLabel}>{item.nome}</Text>
-                </View>
-              </TouchableOpacity>
-            ))}
-          </ScrollView>
+          <SubMenu />
 
           <View style={styles.line} />
         </View>
@@ -118,7 +73,9 @@ export const Home = () => {
 
           <View style={styles.SobremesasContainer}>
             <TouchableOpacity
-              onPress={() => router.push("/(stacks)/Sidebar-Sobremsa-screens")}
+              onPress={() =>
+                router.push("/(stacks)/Sidebar-Sobremessas-screens")
+              }
             >
               <View style={styles.ImageSobremesas}>
                 <Image

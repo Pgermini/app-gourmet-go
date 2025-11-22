@@ -20,6 +20,21 @@ export const styles = StyleSheet.create({
     paddingHorizontal: 2,
     paddingBottom: 100,
   },
+  topBar: {
+    width: "90%",
+    left: 17,
+    flexDirection: "row",
+    justifyContent: "space-between",
+    marginTop: 25,
+  },
+
+  logo: {
+    width: 160,
+    left: 110,
+    height: 80,
+    resizeMode: "contain",
+    marginVertical: 20,
+  },
 
   sectionTitle: {
     fontSize: 18,
