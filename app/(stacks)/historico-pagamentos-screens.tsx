@@ -1,4 +1,4 @@
-import HistoricoPagamentos from "@/src/screens/historico-pagamentos";
+import HistoricoPagamentos from "@/screens/HistoricoPagamentos";
 import { Stack } from "expo-router";
 
 export default function HistoricoPagamentosScreen() {

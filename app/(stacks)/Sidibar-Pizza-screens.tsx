@@ -1,4 +1,4 @@
-import SidebarPizza from "@/src/screens/SidebarPizza";
+import SidebarPizza from "@/screens/SidebarPizza";
 import { Stack } from "expo-router";
 
 export default function SidebarPizzaScreen() {

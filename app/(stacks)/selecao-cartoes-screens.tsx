@@ -1,7 +1,7 @@
-import SidebarRefeicoes from "@/screens/SidebarRefeicoes";
+import SelecaoCartoes from "@/screens/selecao-cartoes";
 import { Stack } from "expo-router";
 
-export default function SidebarRefeicoesScreen() {
+export default function SelecaoCartoesScreens() {
   return (
     <>
       <Stack.Screen
@@ -9,7 +9,7 @@ export default function SidebarRefeicoesScreen() {
           headerShown: false,
         }}
       />
-      <SidebarRefeicoes />
+      <SelecaoCartoes />
     </>
   );
 }

@@ -27,12 +27,12 @@ export default function Footer() {
         <Text style={styles.footerText}>Buscar</Text>
       </TouchableOpacity>
 
-      <TouchableOpacity style={styles.footerItem}>
+      <TouchableOpacity
+        style={styles.footerItem}
+        onPress={() => router.push("/(stacks)/Pedidos-screens")} 
+      >
         <MaterialCommunityIcons
-          name="clipboard-text-outline"
-          size={26}
-          color="black"
-        />
+        name="clipboard-text-outline"size={26}color="black"/>
         <Text style={styles.footerText}>Pedidos</Text>
       </TouchableOpacity>
 

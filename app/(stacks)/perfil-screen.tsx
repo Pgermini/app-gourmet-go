@@ -1,4 +1,4 @@
-import Perfil from "@/src/screens/perfil";
+import Perfil from "@/screens/perfil";
 import { Stack } from "expo-router";
 
 export default function PerfilScreen() {

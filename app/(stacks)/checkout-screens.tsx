@@ -1,7 +1,7 @@
-import SidebarRefeicoes from "@/screens/SidebarRefeicoes";
+import FinalizarCompra from "@/screens/finalizarCompra";
 import { Stack } from "expo-router";
 
-export default function SidebarRefeicoesScreen() {
+export default function checkout() {
   return (
     <>
       <Stack.Screen
@@ -9,7 +9,8 @@ export default function SidebarRefeicoesScreen() {
           headerShown: false,
         }}
       />
-      <SidebarRefeicoes />
+
+      < FinalizarCompra />
     </>
   );
 }

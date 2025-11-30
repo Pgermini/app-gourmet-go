@@ -7,8 +7,8 @@ export const SubMenu = () => {
   const router = useRouter();
 
   return (
-    <View style={{ flexDirection: "row", alignItems: "center" }}>
-      {/* Ícone do menu fixo à esquerda */}
+    <View style={{ flexDirection: "row", alignItems: "center", width: "100%" }}>
+
       <TouchableOpacity
         onPress={() => router.push("/(stacks)/Sidibar-screens")}
         style={{ paddingHorizontal: 8 }}
@@ -16,7 +16,6 @@ export const SubMenu = () => {
         <AntDesign name="menu" size={24} color="black" />
       </TouchableOpacity>
 
-      {/* SUBMENU ROLÁVEL */}
       <ScrollView
         horizontal
         showsHorizontalScrollIndicator={false}
@@ -29,7 +28,7 @@ export const SubMenu = () => {
         >
           <View style={styles.menuCardFundo}>
             <Image
-              source={require("@/src/assets/lanches/Hamburguer.png")}
+              source={require("@/assets/lanches/Hamburguer.png")}
               style={styles.menuImage}
             />
             <Text style={styles.menuLabel}>Lanches</Text>
@@ -43,7 +42,7 @@ export const SubMenu = () => {
         >
           <View style={styles.menuCardFundo}>
             <Image
-              source={require("@/src/assets/lanches/pizza.png")}
+              source={require("@/assets/lanches/pizza.png")}
               style={styles.menuImage}
             />
             <Text style={styles.menuLabel}>Pizza</Text>
@@ -57,7 +56,7 @@ export const SubMenu = () => {
         >
           <View style={styles.menuCardFundo}>
             <Image
-              source={require("@/src/assets/Refeições/refeições.png")}
+              source={require("@/assets/Refeições/refeições.png")}
               style={styles.menuImage}
             />
             <Text style={styles.menuLabel}>Refeições</Text>
@@ -71,7 +70,7 @@ export const SubMenu = () => {
         >
           <View style={styles.menuCardFundo}>
             <Image
-              source={require("@/src/assets/Sobremesas/Sobremesas.png")}
+              source={require("@/assets/Sobremesas/Sobremesas.png")}
               style={styles.menuImage}
             />
             <Text style={styles.menuLabel}>Sobremesas</Text>
@@ -83,11 +82,11 @@ export const SubMenu = () => {
           style={styles.menuItem}
           onPress={() => router.push("/(stacks)/Sidebar-Bebidas-screens")}
         >
-          <View style={styles.menuCardFundo}>
-            <Image
-              source={require("@/src/assets/Bebidas/Bebidas.png")}
-              style={styles.menuImage}
-            />
+        <View style={styles.menuCardFundo}>
+          <Image
+            source={require("@/assets/Bebidas/Bebidas.png")}
+            style={styles.menuImage}
+        />
             <Text style={styles.menuLabel}>Bebidas</Text>
           </View>
         </TouchableOpacity>

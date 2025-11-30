@@ -1,4 +1,4 @@
-import SidebarHamburguer from "@/src/screens/SidebarHamburguer";
+import SidebarHamburguer from "@/screens/SidebarHamburguer";
 import { Stack } from "expo-router";
 
 export default function SidebarHamburguerScreen() {

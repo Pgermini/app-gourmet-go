@@ -1,4 +1,4 @@
-import SidebarBebidas from "@/src/screens/SidebarBebidas";
+import SidebarBebidas from "@/screens/SidebarBebidas";
 import { Stack } from "expo-router";
 
 export default function SidebarRefeicoesScreen() {

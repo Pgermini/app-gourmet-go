@@ -1,4 +1,4 @@
-import Sidebar from "@/src/screens/Sidebar";
+import Sidebar from "@/screens/Sidebar";
 import { Stack } from "expo-router";
 
 export default function SidibarScreen() {

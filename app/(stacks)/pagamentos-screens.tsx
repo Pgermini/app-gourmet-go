@@ -1,4 +1,4 @@
-import Pagamentos from "@/src/screens/pagamentos";
+import Pagamentos from "@/screens/pagamentos";
 import { Stack } from "expo-router";
 
 export default function PagamentosScreen() {

@@ -1,4 +1,4 @@
-import { SubMenu } from "@/src/components/MenuGlobal/SubMenuGlobal";
+import { SubMenu } from "@/components/MenuGlobal/SubMenuGlobal";
 import { router } from "expo-router";
 import { Image, ScrollView, Text, TouchableOpacity, View } from "react-native";
 import { styles } from "./styles";
@@ -10,7 +10,7 @@ export const Home = () => {
         <View style={styles.container}>
           {/* Logo */}
           <Image
-            source={require("@/src/assets/logo/logo.png")}
+            source={require("@/assets/logo/logo.png")}
             style={{
               width: 160,
               height: 80,
@@ -31,7 +31,7 @@ export const Home = () => {
               onPress={() => router.push("/Sidibar-Pizza-screens")}
             >
               <Image
-                source={require("@/src/assets/lanches/pizza.png")}
+                source={require("@/assets/lanches/pizza.png")}
                 style={styles.ImagePizza}
                 resizeMode="cover"
               />
@@ -43,7 +43,7 @@ export const Home = () => {
               }
             >
               <Image
-                source={require("@/src/assets/lanches/Hamburguer.png")}
+                source={require("@/assets/lanches/Hamburguer.png")}
                 style={styles.ImageHamburger}
               />
             </TouchableOpacity>
@@ -58,7 +58,7 @@ export const Home = () => {
             >
               <View style={styles.ImageRefeicoes}>
                 <Image
-                  source={require("@/src/assets/Refeições/refeições.png")}
+                  source={require("@/assets/Refeições/refeições.png")}
                   style={styles.ImageRefeicoes}
                   resizeMode="cover"
                 />
@@ -79,7 +79,7 @@ export const Home = () => {
             >
               <View style={styles.ImageSobremesas}>
                 <Image
-                  source={require("@/src/assets/Sobremesas/Sobremesas.png")}
+                  source={require("@/assets/Sobremesas/Sobremesas.png")}
                   style={styles.ImageSobremesas}
                   resizeMode="cover"
                 />
@@ -98,7 +98,7 @@ export const Home = () => {
             >
               <View style={styles.ImageBebidas}>
                 <Image
-                  source={require("@/src/assets/Bebidas/Bebidas.png")}
+                  source={require("@/assets/Bebidas/Bebidas.png")}
                   style={styles.ImageBebidas}
                   resizeMode="cover"
                 />

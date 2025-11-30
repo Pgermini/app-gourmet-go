@@ -3,9 +3,9 @@ import { StyleSheet } from "react-native";
 export const styles = StyleSheet.create({
   menuRapidoContainer: {
     flexDirection: "row",
-    gap: 20,
-    paddingHorizontal: 15,
+    gap: 6,
     paddingVertical: 10,
+    paddingHorizontal: 10,
   },
 
   menuItem: {

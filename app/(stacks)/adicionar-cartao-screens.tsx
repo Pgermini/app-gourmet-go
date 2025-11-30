@@ -1,4 +1,4 @@
-import AdicionarCartao from "@/src/screens/adicionar-cartao";
+import AdicionarCartao from "@/screens/adicionar-cartao";
 import { Stack } from "expo-router";
 
 export default function AdicionarCartaoScreen() {

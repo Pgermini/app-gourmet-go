@@ -1,4 +1,4 @@
-import { Auth } from "@/src/screens/auth/auth";
+import { Auth } from "@/screens/auth/auth";
 import { Stack } from "expo-router";
 
 export default function AuthScreen() {

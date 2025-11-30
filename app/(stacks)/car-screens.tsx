@@ -1,11 +1,11 @@
-import CartoesSalvos from "@/screens/cartoes-salvos";
+import Car from "@/screens/car";
 import { Stack } from "expo-router";
 
-export default function CartoesSalvosScreen() {
+export default function CarScreen() {
   return (
     <>
       <Stack.Screen options={{ headerShown: false }} />
-      <CartoesSalvos />
+      <Car />
     </>
   );
 }

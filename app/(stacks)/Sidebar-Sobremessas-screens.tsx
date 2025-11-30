@@ -1,4 +1,4 @@
-import SidebarSobremesas from "@/src/screens/SidebarSobremessas";
+import SidebarSobremesas from "@/screens/SidebarSobremessas";
 import { Stack } from "expo-router";
 
 export default function SidebarSobremesasScreen() {
