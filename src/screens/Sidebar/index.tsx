@@ -1,4 +1,4 @@
-import { SubMenu } from "@/src/components/MenuGlobal/SubMenuGlobal";
+import { SubMenu } from "@/components/MenuGlobal/SubMenuGlobal";
 import { MaterialCommunityIcons } from "@expo/vector-icons";
 import { useRouter } from "expo-router";
 import { Image, ScrollView, Text, TouchableOpacity, View } from "react-native";
@@ -10,11 +10,11 @@ export default function Sidebar() {
   return (
     <View style={{ flex: 1, backgroundColor: "#fff" }}>
       <ScrollView contentContainerStyle={styles.content}>
-        <Text style={styles.sectionTitle}>Categorias</Text>
+
         <View style={styles.categoriesContainer}>
           {/* Top Bar */}
           <View style={styles.topBar}>
-            <TouchableOpacity onPress={() => router.replace("/home-screen")}>
+            <TouchableOpacity onPress={() => router.replace("/(stacks)/car-screens")}>
               <MaterialCommunityIcons
                 name="cart-variant"
                 size={28}
@@ -33,9 +33,10 @@ export default function Sidebar() {
 
           {/* Logo */}
           <Image
-            source={require("@/src/assets/logo/logo.png")}
+            source={require("@/assets/logo/logo.png")}
             style={styles.logo}
           />
+          
           <SubMenu />
         </View>
         <View>

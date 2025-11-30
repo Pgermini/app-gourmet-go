@@ -103,8 +103,10 @@ export const styles = StyleSheet.create({
 
   imagemGrande: {
     width: "90%",
-    height: 200,
-    borderRadius: 20,
+    height: 250,
+    borderRadius: 25,
+    marginTop: 15,
+    alignSelf: "center",
   },
 
   textoSobreImagem: {

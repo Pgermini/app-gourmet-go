@@ -2,11 +2,12 @@ import { StyleSheet } from "react-native";
 
 export const styles = StyleSheet.create({
   header: {
+    width: "100%",
     flexDirection: "row",
+    justifyContent: "center",
     alignItems: "center",
-    paddingHorizontal: 16,
     paddingTop: 50,
-    paddingBottom: 15,
+    paddingBottom: 10,
   },
 
   headerTitle: {
@@ -15,24 +16,30 @@ export const styles = StyleSheet.create({
     marginLeft: 10,
     color: "#000",
   },
+
   container: {
+    flex: 1,
     alignItems: "center",
     width: "100%",
-    paddingBottom: 15,
+    paddingBottom: 100,
+    paddingTop: 10,
   },
 
   topBar: {
     width: "90%",
     flexDirection: "row",
     justifyContent: "space-between",
-    marginTop: 25,
+    alignItems: "center",
+    marginTop: 20,
+    marginBottom: 5,
   },
 
   logo: {
     width: 160,
     height: 80,
     resizeMode: "contain",
-    marginVertical: 20,
+    alignSelf: "center",
+    marginVertical: 5, // ESPAÇAMENTO AJUSTADO
   },
 
   menuRapidoContainer: {
@@ -46,7 +53,7 @@ export const styles = StyleSheet.create({
   },
 
   menuCardFundo: {
-    backgroundColor: "#ffffffff",
+    backgroundColor: "#ffffff",
     borderRadius: 16,
     width: 115,
     height: 125,
@@ -72,19 +79,19 @@ export const styles = StyleSheet.create({
   titleSection: {
     fontSize: 20,
     fontWeight: "bold",
-    marginTop: 15,
+    marginTop: 20, // Melhor espaçamento
   },
 
   titlePizzas: {
     fontSize: 18,
     fontWeight: "bold",
-    marginTop: 10,
+    marginTop: 15,
   },
 
-  bigDribk: {
-    width: "95%",
-    height: 245,
-    borderRadius: 52,
+  bigHamburguer: {
+    width: "90%",
+    height: 250,
+    borderRadius: 12,
     marginTop: 15,
     alignSelf: "center",
   },
@@ -92,7 +99,7 @@ export const styles = StyleSheet.create({
   titleSabores: {
     fontSize: 18,
     fontWeight: "bold",
-    marginTop: 20,
+    marginTop: 25,
   },
 
   /** GRID SABORES */
@@ -105,18 +112,18 @@ export const styles = StyleSheet.create({
   },
 
   saborCard: {
-    width: "48%", // de 47 → 48
+    width: "47%",
     backgroundColor: "#f0f0f0",
     borderRadius: 12,
-    marginBottom: 18,
+    marginBottom: 15,
     alignItems: "center",
     padding: 10,
   },
 
   saborImg: {
     width: "100%",
-    height: 90,
-    borderRadius: 10,
+    height: 120,
+    borderRadius: 25,
   },
 
   saborLabel: {
